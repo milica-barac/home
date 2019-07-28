@@ -1,0 +1,88 @@
+<html>
+<head>
+    <style>
+        .vertical{
+            display: block;
+        }
+
+        div{
+            padding: 5px 10px 5px 50px;
+        }
+
+        div input{
+            position: relative;
+            left: 35px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Login details</legend>
+
+                <div>
+                    <label>Name:</label>
+                    <input type="name">
+                </div>
+
+                <div>
+                    <label>Email:</label>
+                    <input type="email">
+                </div>
+
+                <div>
+                    <label>Password:</label>
+                    <input type="password">
+                </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Your feedback</legend>
+            
+                <div>
+                    <label>Please check all the emotions that apply to you:</label>
+                        <div class="vertical">Angry<input type="checkbox" name="Angry"></div>
+                        <div class="vertical">Sad<input type="checkbox" name="Sad"></div>
+                        <div class="vertical">Happy<input type="checkbox" name="Happy" checked></div>
+                        <div class="vertical">Ambivalent<input type="checkbox" name="Ambivalent"></div>
+                </div>
+
+                <div>
+                    <label>How satisfied were you with our service?</label>
+                        <div class="vertical">Very satisfied<input type="radio" value ="VS" name="Satisfaction"></div>
+                        <div class="vertical">Satisfied<input type="radio" value="S" name="Satisfaction"></div>
+                        <div class="vertical">Didn't care<input type="radio" value="DC" name="Satisfaction"></div>
+                        <div class="vertical">Dissatisfied<input type="radio" value="D" name="Satisfaction"></div>
+                       <div class="vertical">Very dissatisfied<input type="radio" value="VD" name="Satisfaction"></div>  
+                </div>
+                    
+                <div>
+                    <label>Further comments:</label>
+                    <textarea rows="4" cols="33"></textarea>
+                </div>
+        </fieldset>            
+    
+
+                <div>
+                    <label>Bio photo:</label>
+                    <input type="file">
+                </div>
+
+                <div>
+                    <label>Location visited:</label>
+                    <select>   
+                        <option value="Select location">Select location</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit">
+                </div> 
+
+                <div>   
+                    <input type="reset" value="Reset">
+                </div>
+
+        </form>   
+</body>
+</html>
